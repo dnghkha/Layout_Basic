@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- mycss -->
+    <link rel="stylesheet" href="./bootstrap/css/mycss.css">
+
+    <!-- ckeditor -->
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-fluid  bg-light">
+        <div class="row m-2">
+            <div class="col-12 col-md-2 col-xl-2 text-center m-auto">
+                <a href="./index.html"><img src="./images/PET.png" alt=""></a>
+            </div>
+            <div class="col-12 col-md-10 col-xl-10 text-center">
+                <h1 class="text-primary">Cửa hàng Thu Trân</h1>
+                <blockquote class="blockquote">
+                    <footer class="blockquote-footer">Phục vụ Quí khách 24/7</footer>
+                    <footer class="blockquote-footer">
+                        <i class="fa fa-home" aria-hidden="true"></i> : 137E Nguyễn Chí Thanh, P4, Q5, Tp. Hồ Chí Minh
+                    </footer>
+                    <footer class="blockquote-footer">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> : admin@thutran.com -
+                        <i class="fa fa-phone" aria-hidden="true"></i>: <a href="tel:08 777 6666">08 777 6666</a>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+    <button type="button" class="btn btn-success">Đồng ý</button>
+    <button type="button" class="btn btn-danger">Bỏ qua</button>
+
+    <div class="container-fluid">
+        <div class="btn btn-outline-danger btn-block mb-2 mt-1">
+            <h1>Liên hệ với chúng tôi</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6">
+                <form action="">
+                    <div class="form-group">
+                        <label for="" class="h5">Họ tên</label> <br>
+                        <small id="helpId" class="text-muted">Nhập họ và tên</small>
+                        <input type="text" name="" id="" class="hoten form-control border-0 border-underline"
+                            placeholder="" aria-describedby="helpId">
+
+                        <label for="" class="h5 mt-2">Email</label> <br>
+                        <small id="helpId" class="text-muted">Nhập Email</small>
+                        <input type="text" name="" id="" class="email form-control border-0 border-underline"
+                            placeholder="" aria-describedby="helpId">
+
+                        <label for="" class="h5 mt-2">Tiêu đề</label> <br>
+                        <small id="helpId" class="text-muted">Nhập tiêu đề</small>
+                        <input type="text" name="" id="" class="form-control border-0 border-underline"
+                            placeholder="" aria-describedby="helpId">
+                    </div>
+                    
+                </form>
+                <textarea name="editor1"></textarea>
+            </div>
+            
+
+            <div class="col-xl-6 border-left">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.680759145666!2d106.66449981595748!3d10.759068462453158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee53a91b957%3A0x394068fd61e4fbeb!2zMTM3RSBOZ3V54buFbiBDaMOtIFRoYW5oLCBQaMaw4budbmcgOSwgUXXhuq1uIDUsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1657942305211!5m2!1sen!2s"
+                    width="100%vw" height="100%vh" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-white-50 p-2 text-center">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> Designed by D. Ka</p>
+    </div>
+
+    <!-- script -->
+    <script>
+        CKEDITOR.replace('editor1');
+        $(".btn-success").click(function () {
+            if ($(".hoten").val() == "" || $(".email").val() == "") {
+                alert("Bạn vui lòng không để trống thông tin liên lạc.")
+            }
+        })
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

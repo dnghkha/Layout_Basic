@@ -1,0 +1,15 @@
+.position-under{
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+    z-index: 1;
+}
+
+.border-underline{
+    border-bottom: 1px solid red !important;
+    border-radius: 0 !important;
+}
+
+.box-shadow{
+    box-shadow: 5px 5px gray;
+}
